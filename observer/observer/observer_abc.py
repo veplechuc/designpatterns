@@ -1,14 +1,14 @@
 from abc import ABCMeta, abstractmethod
 
+
 class AbsObserver(metaclass=ABCMeta):
-    
-    @abstractmethod    
+    @abstractmethod
     def update(self, value):
         pass
-    
+
     def __enter__(self):
         return self
 
-    @abstractmethod    
+    @abstractmethod
     def __exit__(self, exc_type, exc_value, traceback):
-        pass    
+        pass
