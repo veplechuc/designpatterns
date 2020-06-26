@@ -1,3 +1,2 @@
-class Order():
+class Order:
     pass
-
